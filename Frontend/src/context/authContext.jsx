@@ -3,7 +3,7 @@ import React, { createContext } from 'react'
 export const AuthDataContext = createContext();
 
 export default function AuthDataProvider({children}) {
-    const serverUrl = "https://backend-v5by.onrender.com"
+    const serverUrl = "https://backend-v5by.onrender.com/api"
     
   return (
     <AuthDataContext.Provider value={serverUrl}>
