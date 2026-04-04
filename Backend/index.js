@@ -10,7 +10,7 @@ const postRouter = require("./routes/postRoute");
 app.set("trust proxy", 1);  // 🔥 ADD THIS LINE
 
 app.use(cors({
-    origin: "https://task-planet-social-app.onrender.com",
+    origin: "https://task-planet-pi.vercel.app/",
     credentials: true
 }))
 
