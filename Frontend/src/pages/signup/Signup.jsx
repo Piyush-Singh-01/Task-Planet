@@ -4,12 +4,12 @@ import styles from './Signup.module.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios'
-import { UserDataContext } from '../../context/userContext';
+// import { UserDataContext } from '../../context/userContext';
 
 function Signup() {
     const navigate = useNavigate();
     const serverUrl = useContext(AuthDataContext);
-    const {setUserData} = useContext(UserDataContext);
+    // const {setUserData} = useContext(UserDataContext);
     const [info, setInfo] = useState({
         username: "",
         email: "",
@@ -34,7 +34,7 @@ function Signup() {
             const result = await axios.post(`${serverUrl}/api/auth/signup`, info, {withCredentials: true});
             console.log(result.user);
             if(result.status === 200 || result.status===201){
-              setUserData(result.data);
+              // setUserData(result.data);
               toast.success("Singup Successfully");
               navigate("/");
             }
