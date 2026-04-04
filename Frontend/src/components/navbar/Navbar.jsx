@@ -6,21 +6,21 @@ import { useNavigate } from "react-router-dom";
 import { AuthDataContext } from "../../context/authContext";
 
 import styles from './Navbar.module.css'
-import { UserDataContext } from '../../context/userContext';
+// import { UserDataContext } from '../../context/userContext';
 
 function Navbar({ search, setSearch }) {
   const [showMenu, setShowMenu] = useState(false);
 
   const navigate = useNavigate();
   const serverUrl = useContext(AuthDataContext);
-  const {setUserData} = useContext(UserDataContext);
+  // const {setUserData} = useContext(UserDataContext);
 
   //  Logout function
   const handleLogout = async () => {
     try {
       await axios.post(`${serverUrl}/api/auth/logout`,{},{withCredentials: true});
 
-      setUserData(null);
+      // setUserData(null);
       navigate("/login");
     } catch (error) {
       console.log("Logout error", error);
