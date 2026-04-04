@@ -10,7 +10,7 @@ const userRouter  = require("./routes/userRoute");
 // app.set("trust proxy", 1);  // 🔥 ADD THIS LINE
 
 app.use(cors({
-    origin: "https://task-planet-pi.vercel.app/",
+    origin: "https://task-planet-pi.vercel.app",
     credentials: true
 }))
 
