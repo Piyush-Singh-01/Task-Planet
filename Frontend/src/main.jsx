@@ -6,13 +6,13 @@ import {BrowserRouter} from 'react-router-dom'
 import AuthDataProvider from './context/authContext.jsx'
 import { ToastContainer, Bounce } from 'react-toastify';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import UserDataProvider from './context/userContext.jsx'
+// import UserDataProvider from './context/userContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <AuthDataProvider>
-    <UserDataProvider>
+    {/* <UserDataProvider> */}
       <ToastContainer
         position="top-right"
         autoClose={1000}
@@ -27,7 +27,7 @@ createRoot(document.getElementById('root')).render(
         transition={Bounce}
         />
       <App />
-    </UserDataProvider>
+    {/* </UserDataProvider> */}
     </AuthDataProvider>
     
     </BrowserRouter>
