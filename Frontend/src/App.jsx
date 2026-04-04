@@ -3,10 +3,10 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/home/Home.jsx';
 import Signup from './pages/signup/Signup.jsx';
 import Login from './pages/login/Login.jsx';
-import { UserDataContext } from './context/userContext.jsx';
+// import { UserDataContext } from './context/userContext.jsx';
 
 function App() {
-  const { userData, loading ,getCurrentUser} = useContext(UserDataContext);
+  // const { userData, loading ,getCurrentUser} = useContext(UserDataContext);
   // useEffect(()=>{
   //   getCurrentUser();
   // },[])
