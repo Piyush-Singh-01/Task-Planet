@@ -1,0 +1,101 @@
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  /* max-width: 800px; */
+  margin: 20px auto;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.follow{
+  position:absolute;
+  right: 10px;
+  background: #1876f24e;
+  padding: 5px 8px;
+  border-radius: 10px;
+  color: rgb(6, 52, 202);
+  font-weight: 600;
+  border: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #cccccc50;
+  text-align: center;
+  padding: 4px;
+}
+
+.avatar h2{
+  color:rgb(227, 132, 8)
+}
+
+.time {
+  font-size: 12px;
+  color: gray;
+}
+
+.text {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.actions button {
+  color: black;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.commentBox {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.commentBox input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn{
+  background: red;
+  color: blue;
+  
+}
+.commentBox button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.comments p {
+  font-size: 13px;
+  margin: 3px 0;
+  color: #444;
+}

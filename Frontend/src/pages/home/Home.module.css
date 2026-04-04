@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background: #f0f2f5;
+  min-height: 100vh;
+  /* background-color: black; */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.createPost {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.createPost input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.createPost button {
+  padding: 10px 15px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.postText {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.actions button {
+  background: #ff4d4d;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.commentBox {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.commentBox input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.commentBox button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.comments p {
+  font-size: 13px;
+  margin: 3px 0;
+  color: #444;
+}
