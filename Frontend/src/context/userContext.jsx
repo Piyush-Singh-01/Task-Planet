@@ -13,7 +13,7 @@ export default function UserDataProvider({ children }) {
   const getCurrentUser = async () => {
     try {
         console.log("Server URL:", serverUrl);
-      const result = await axios.get(`${serverUrl}/user/currentuser`,{ withCredentials: true });
+      const result = await axios.get(`${serverUrl}/api/user/currentuser`,{ withCredentials: true });
       setUserData(result.data);
       console.log(result.data);
 
