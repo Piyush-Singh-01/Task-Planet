@@ -7,8 +7,6 @@ const router = express.Router();
 router.post("/signup", SignUp);
 router.post("/login", Login);
 router.post("/logout", Logout)
-router.get("/me", isAuth, (req, res) => {
-  res.status(200).json({ msg: "Authorized" });
-});
+
 
 module.exports =  router;
