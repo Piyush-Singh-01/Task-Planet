@@ -4,10 +4,10 @@ import styles from './Login.module.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
-import { UserDataContext } from '../../context/userContext';
+// import { UserDataContext } from '../../context/userContext';
 function Login() {
     const serverUrl = useContext(AuthDataContext);
-    const {setUserData} = useContext(UserDataContext);
+    // const {setUserData} = useContext(UserDataContext);
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
     const [info, setInfo] = useState({
@@ -29,7 +29,7 @@ function Login() {
          try {
             const result = await axios.post(`${serverUrl}/api/auth/login`, info, {withCredentials: true});
             if(result.status === 200 || result.status===201){
-              setUserData(result.data);
+              // setUserData(result.data);
               toast.success(result?.data?.msg || "Singup Successfully");
               navigate("/");
             }
