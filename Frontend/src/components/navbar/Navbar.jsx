@@ -20,7 +20,6 @@ function Navbar({ search, setSearch }) {
     try {
       await axios.post(`${serverUrl}/api/auth/logout`,{},{withCredentials: true});
 
-      await axios.post(`${serverUrl}/auth/logout`,{},{withCredentials: true});
       setUserData(null);
       navigate("/login");
     } catch (error) {
