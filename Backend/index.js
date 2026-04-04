@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRouter);
 app.use("/api/post", postRouter);
-app.use("/api/user", userRouter):
+app.use("/api/user", userRouter);
 
 const PORT = process.env.PORT || 3000;
 
