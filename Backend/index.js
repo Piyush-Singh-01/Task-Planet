@@ -7,7 +7,7 @@ const app = express();
 const authRouter = require("./routes/authRoute");
 const postRouter = require("./routes/postRoute");
 
-app.set("trust proxy", 1);  // 🔥 ADD THIS LINE
+// app.set("trust proxy", 1);  // 🔥 ADD THIS LINE
 
 app.use(cors({
     origin: "https://task-planet-pi.vercel.app/",
